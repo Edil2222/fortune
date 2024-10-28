@@ -1,0 +1,73 @@
+.information {
+  &__title {
+    font-size: 50px;
+    color: white;
+    font-family: Stapel, sans-serif;
+    padding: 10px 20px;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 20px;
+    padding: 0 20px;
+    color: white;
+  }
+  &__block {
+    padding: 30px 20px;
+  }
+  &__price {
+    padding: 10px 0;
+    font-size: 29px;
+    color: white;
+    &-block {
+      width: 285px;
+      height: 129px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.37) 0%, rgba(255, 255, 255, 0) 100%);
+      border-radius: 20px;
+      display: flex;
+      column-gap: 20px;
+      justify-content: center;
+      padding: 20px 0;
+    }
+  }
+}
+
+.play {
+  padding: 0 50px;
+  transform: translate(-0px, -100%);
+  width: 285px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 1);
+  background: linear-gradient(267.51deg, #FFCB00 0%, #FF9900 85.79%);
+  border-radius: 65.89px;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  transition: 1s;
+}
+.play:hover {
+  transition: 1s;
+  background: white;
+  color: #ffcb00;
+}
+
+@media (max-width: 767px) {
+  .information {
+    &__title {
+      font-size: 24px;
+      text-align: center;
+    }
+    &__desc {
+      font-size: 14px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .information {
+    &__title {
+      padding: 0 0 0;
+      font-size: 16px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Stapel, sans-serif;
+}
+
+body {
+  background: url("../assets/background.png") center/cover no-repeat;
+  height: 100vh;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+a, button {
+  cursor: pointer;
+}
+
+.main {
+  margin: 0 auto;
+}
+
+@import "./header";
+@import "./information";
