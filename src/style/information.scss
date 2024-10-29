@@ -29,6 +29,9 @@
       padding: 20px 0;
     }
   }
+  &__logo {
+    display: none;
+  }
 }
 
 .play {
@@ -63,11 +66,62 @@
   }
 }
 
+@media (max-width: 480px) {
+  .information {
+    &__logo {
+      display: block;
+      margin: 0 auto;
+      width: 190px;
+    }
+  }
+}
+
+
 @media (max-width: 425px) {
   .information {
+    &__logo {
+
+      width: 160px;
+      padding: 20px 0;
+    }
     &__title {
-      padding: 0 0 0;
+      padding: 0 0 10px;
       font-size: 16px;
+    }
+    &__block {
+
+      padding: 30px 40px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .information {
+    &__block {
+      padding: 30px 58px;
+    }
+    &__price {
+      &-block {
+        width: 200px;
+        padding: 15px 40px;
+      }
+    }
+  }
+  .play {
+    width: 203px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .information {
+    &__logo {
+      width: 100px;
+    }
+    &__title {
+    }
+    &__desc {
+      font-size: 13px;
     }
   }
 }

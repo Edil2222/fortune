@@ -37,7 +37,7 @@
                     <div class="header__balance-information">
                         <p class="header__balance-title">Фишек</p>
                         <h1 class="header__balance-total" id="chips-total">
-                            0
+                            10000
                         </h1>
                     </div>
                 </div>
@@ -62,9 +62,15 @@
         </div>
     </div>
 </header>
+
+
+
+
+
 <main class="main">
     <section class="information">
         <div class="container">
+            <img src="./src/assets/Logo.png" class="information__logo" alt="">
             <h1 class="information__title">
                 Колесо фартуны
             </h1>
@@ -97,20 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="wheel">
-        <div class="container">
-            <div class="wheel__number">
-                <span>100</span>
-            </div>
-            <button id="openModalBtn">
-                MODAL
-            </button>
-        </div>
-    </section>
 </main>
-
-
-
 
 
 
@@ -126,8 +119,13 @@
             <h1 class="modal__title">ВЫ ВЫИГРАЛИ!</h1>
         </div>
     </div>
+    
+    <div class="warning" id="warningModal">
+        <div class="warning__box">
+            <h1 class="warning__title">WARNING</h1>
+        </div>
+    </div>
 
 <script src="./src/script/script.js"></script>
 </body>
-
 </html>

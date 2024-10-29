@@ -13,6 +13,7 @@ function decreaseBalance(amount) {
     }
 }
 
+
 document.getElementById("openModalBtn").addEventListener("click", function () {
     document.getElementById("winModal").classList.add("open")
 })

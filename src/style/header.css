@@ -1,0 +1,197 @@
+.header {
+  padding: 30px 0;
+}
+.header__logo {
+  width: 100px;
+}
+.header__wrapper {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header__wrapper-left {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.header__wrapper-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  width: 612.01px;
+}
+.header__balance {
+  height: 66px;
+  width: 180.57px;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 204, 113, 0.5)), to(rgba(20, 47, 58, 0.5)));
+  background: linear-gradient(90deg, rgba(0, 204, 113, 0.5) 0%, rgba(20, 47, 58, 0.5) 100%);
+  border-radius: 54.14px;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 20px;
+}
+.header__balance-title {
+  font-size: 20.46px;
+  font-weight: 400;
+  color: white;
+}
+.header__balance-total {
+  color: white;
+  font-size: 20.46px;
+  font-weight: 600;
+}
+.header__help-btn {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 27px;
+     -moz-column-gap: 27px;
+          column-gap: 27px;
+  width: 195.78px;
+  height: 66px;
+  padding: 0 12px;
+  border-radius: 54.14px;
+  border: 1px solid white;
+  font-family: Monserrat, sans-serif;
+  background: transparent;
+}
+.header__help-btn svg {
+  width: 36.66px;
+  height: 36.66px;
+}
+.header__help-btn span {
+  font-size: 25.27px;
+  font-weight: 500;
+  color: white;
+}
+.header__close-btn {
+  width: 66.33px;
+  height: 66.33px;
+  background: linear-gradient(226.27deg, #FF2171 2.12%, #FF314A 100%);
+  border: none;
+  border-radius: 12.31px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__close-btn span {
+  width: 9.97px;
+  height: 45.44px;
+  border-radius: 13.95px;
+  border: none;
+  background: white;
+  display: inline-block;
+  -webkit-transform: rotate(50deg);
+          transform: rotate(50deg);
+}
+.header__close-btn span:after {
+  content: "";
+  width: 9.97px;
+  height: 45.44px;
+  border-radius: 13.95px;
+  border: none;
+  background: white;
+  display: inline-block;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+}
+
+@media (max-width: 767px) {
+  .header__wrapper-left {
+    display: inline;
+  }
+  .header__balance {
+    width: 100px;
+    height: 42px;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .header__balance-title {
+    font-size: 10px;
+  }
+  .header__balance-total {
+    font-size: 10px;
+  }
+  .header__chips svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+@media (max-width: 425px) {
+  .header__help-btn {
+    width: 100px;
+    height: 46px;
+  }
+  .header__close-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .header__close-btn span {
+    width: 4.97px;
+    height: 35.44px;
+    border: none;
+    background: white;
+    display: inline-block;
+    -webkit-transform: rotate(50deg);
+            transform: rotate(50deg);
+  }
+  .header__close-btn span:after {
+    content: "";
+    width: 4.97px;
+    height: 35.44px;
+    border-radius: 13.95px;
+    border: none;
+    background: white;
+    display: inline-block;
+    -webkit-transform: rotate(80deg);
+            transform: rotate(80deg);
+  }
+}
