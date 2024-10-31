@@ -13,6 +13,9 @@
   }
   &__block {
     padding: 30px 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
   }
   &__price {
     padding: 10px 0;
@@ -32,11 +35,14 @@
   &__logo {
     display: none;
   }
+  &__right {
+    padding: 0 120px 0;
+  }
 }
 
 .play {
   padding: 0 50px;
-  transform: translate(-0px, -100%);
+  transform: translate(19px, -165%);
   width: 285px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 1);
@@ -53,75 +59,115 @@
   color: #ffcb00;
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
   .information {
+    &__block {
+      padding: 14px 13px;
+    }
+    &__right {
+      padding: 0 80px 0;
+    }
     &__title {
-      font-size: 24px;
-      text-align: center;
+      font-size: 40px;
     }
     &__desc {
-      font-size: 14px;
+      font-size: 16px;
+    }
+    &__price {
+      font-size: 24px;
+      padding: 0;
+      &-block {
+        width: 230px;
+        height: 122px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+
+  .information {
+    &__block {
+      display: block;
+      justify-content: center;
+      align-items: center;
+    }
+    &__title {
       text-align: center;
+      font-size: 30px;
+    }
+    &__desc {
+      text-align: center;
+    }
+    &__price {
+      &-block {
+        margin: 0 auto;
+      }
+    }
+    &__right {
+      padding: 0 130px 0;
     }
   }
 }
 
 @media (max-width: 480px) {
   .information {
-    &__logo {
-      display: block;
-      margin: 0 auto;
-      width: 190px;
+    &__right {
+      padding: 0 65px 0;
     }
   }
 }
 
-
 @media (max-width: 425px) {
   .information {
-    &__logo {
-
-      width: 160px;
-      padding: 20px 0;
-    }
-    &__title {
-      padding: 0 0 10px;
-      font-size: 16px;
-    }
-    &__block {
-
-      padding: 30px 40px;
+    &__right {
+      padding: 0 40px 0;
     }
   }
 }
 
 @media (max-width: 375px) {
   .information {
+    &__left {
+      height: 230px;
+    }
+    &__right {
+      padding: 0 40px 0;
+    }
     &__block {
-      padding: 30px 58px;
+      padding: 3px 12px;
     }
     &__price {
       &-block {
-        width: 200px;
-        padding: 15px 40px;
+        padding: 8px 0;
       }
     }
   }
-  .play {
-    width: 203px;
-    padding: 0 20px;
-  }
 }
+
 
 @media (max-width: 320px) {
   .information {
-    &__logo {
-      width: 100px;
-    }
     &__title {
+      font-size: 18px;
     }
     &__desc {
-      font-size: 13px;
+      font-size: 14px;
+    }
+    &__right {
+      padding: 0 20px 0;
     }
   }
 }
+
+
+
+
+
+
+
+

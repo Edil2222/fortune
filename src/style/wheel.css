@@ -30,7 +30,7 @@
 }
 
 .spin__block .spin__btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -28px;
   width: 20px;
@@ -48,9 +48,7 @@
   background: #333;
   border-radius: 50%;
   overflow: hidden;
-  box-shadow: 0 0 0 5px #333,
-  0 0 0 15px #fff,
-  0 0 0 18px #111;
+  box-shadow: 0 0 0 5px #333, 0 0 0 15px #fff, 0 0 0 18px #111;
   transition: transform 5s ease-in-out;
   will-change: transform;
 }
@@ -80,93 +78,71 @@
 }
 
 .spin__block .wheel .number span::after {
-  content: '$';
+  content: "$";
   position: absolute;
   font-size: 0.75em;
   font-weight: 500;
 }
 
-
 @media (max-width: 1024px) {
-  .spin {
-    &__block {
-      width: 350px;
-      height: 350px;
-    }
+  .spin__block {
+    width: 350px;
+    height: 350px;
   }
   .number span {
     font-size: 27px;
   }
 }
-
 @media (max-width: 900px) {
-  .spin {
-    &__block {
-      width: 300px;
-      height: 300px;
-    }
-    &__btn {
-      width: 50px;
-      height: 50px;
-    }
+  .spin__block {
+    width: 300px;
+    height: 300px;
+  }
+  .spin__btn {
+    width: 50px;
+    height: 50px;
   }
   .number span {
     font-size: 24px;
   }
 }
-
 @media (max-width: 768px) {
-  .spin {
-    &__block {
-      width: 250px;
-      height: 250px;
-      .wheel {
-        .number {
-          span {
-            font-size: 24px;
-          }
-        }
-      }
-    }
+  .spin__block {
+    width: 250px;
+    height: 250px;
+  }
+  .spin__block .wheel .number span {
+    font-size: 24px;
   }
   .play {
     width: 230px;
     transform: translate(13px, -165%);
   }
 }
-
 @media (max-width: 600px) {
   .play {
     transform: translate(141px, -161%);
   }
 }
-
 @media (max-width: 480px) {
   .play {
     transform: translate(82px, -161%);
   }
 }
-
 @media (max-width: 425px) {
   .play {
     transform: translate(54px, -161%);
   }
-  .spin {
-    &__block {
-
-      width: 220px;
-      height: 220px;
-    }
+  .spin__block {
+    width: 220px;
+    height: 220px;
   }
   .number span {
     font-size: 18px;
   }
 }
-
-
 @media (max-width: 375px) {
   .play {
-
     transform: translate(30px, -161%);
   }
 }
@@ -174,28 +150,7 @@
   .play {
     transform: translate(12px, -161%);
   }
-  .spin {
-    .wheel {
-      .number {
-        span {
-
-          font-size: 18px;
-        }
-      }
-    }
+  .spin .wheel .number span {
+    font-size: 18px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
